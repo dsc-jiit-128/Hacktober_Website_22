@@ -1,0 +1,237 @@
+body {
+    background-color: rgb(235, 238, 39);
+    overflow-x: hidden; 
+}
+
+.events {
+    width: 105vmax;
+    background-color: rgb(248, 252, 248);
+    position: relative;
+    padding-top: 1px;
+    margin-top: -218px;
+    margin-left: -8px;
+    margin-right: -10px;
+}
+
+.devtext{
+    margin-left: 434px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 207px;
+    font-size: 16px;
+}
+
+.webdevhead{
+    margin-left: 429px;
+
+}
+
+hr{
+    border-style: dashed;
+    height: -5px;
+    width: 5%;
+    font-size: xx-large;
+}
+
+.myphoto {
+    display: inline-block;
+    width: 296px;
+    margin-top: 10px;
+    margin-left: 647px;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+h3 {
+    margin-left: 576px;
+}
+
+.webphoto {
+    position: relative;
+    left: 28px;
+    width: 25vmax;
+    float: left;
+}
+
+.gdsc{
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 314px auto 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
+    display: inline-block;
+}
+
+.pic2 {
+    position: relative;
+    bottom: 320px;
+    left: 1000px;
+    animation-name: pic2move;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pic2move{
+    0%{
+        transform: translateX(30%);
+    }
+
+    50%{
+        transform: translateX(20%);
+    }
+
+    100%{
+        transform: translateX(40%);
+    }
+
+    50%{
+        transform: translateX(-70%);
+    }
+
+    0%{
+        transform: translateX(-10%);
+    }
+
+}
+
+.pic1 {
+    position: relative;
+    top: 124px;
+    left: 270px;
+    animation-name: pic1move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pic1move {
+    0%{
+        transform: translateX(10%);
+    }
+
+    50%{
+        transform: translateX(40%);
+    }
+
+    100%{
+        transform: translateX(40%);
+    }
+
+    50%{
+        transform: translateX(-70%);
+    }
+
+    0%{
+        transform: translateX(-10%);
+    }
+
+
+}
+
+
+.uppertext1 {
+    font-family: 'Bangers', cursive;
+    font-style: italic;
+    font-size: 59px;
+    position: relative;
+    top: 100px;
+    left: 702px;
+    line-height: 0.5;
+}
+
+.uppertext2 {
+    font-family: 'Bangers', cursive;
+    font-style: italic;
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+    left: 635px;
+    line-height: 0.5;
+}
+
+.event-row1{
+    background-color: rgb(105, 105, 255);
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+.event-row2{
+    background-color: rgb(255, 71, 20);
+    margin-bottom: 130px;
+    margin-left: 57px;
+}
+
+.markphoto{
+    position: absolute;
+    left: 1030px;
+    width: 25vmax;
+    float: left;
+    margin-bottom: 260px;
+    margin-left: 10px;
+}
+
+.digimark{
+    margin-left: 769px;
+}
+
+.marktext{
+    margin-right: -7430px;
+    margin-left: 0px;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+.bttext1{
+    text-align: centre;
+}
+
+.bttext2{
+    text-align: centre;
+}
+
+.bttext3{
+    text-align: center;
+}
+
+form{
+    margin-left: 631px;
+}
+
+.footer-linkedin{
+    width: 44px;
+    margin-left: 674px;
+    margin-right: 10px;
+}
+
+.footer-github{
+    margin-left: 51px;
+    width: 44px;
+}
+
+.copybox{
+    width: 110vmax;
+    position: relative;
+    right: 10px;
+    top: 8px;
+    background-color: black;
+}
+
+.copyright{
+    color: aqua;
+    margin-left: 691px;
+}
+
+.contact-me{
+    position: static;
+}
+
+.text{
+    margin-left: 207px;
+}
