@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(235, 238, 39);
+    background-color: rgb(249, 249, 98);
     overflow-x: hidden; 
 }
 
@@ -79,14 +79,17 @@ div {
 @keyframes pic2move{
     0%{
         transform: translateX(30%);
+        transform: rotate(170deg);
     }
 
     50%{
         transform: translateX(20%);
+        transform: rotate(1500deg);
     }
 
     100%{
         transform: translateX(40%);
+        transform: rotate(190deg);
     }
 
     50%{
@@ -112,10 +115,12 @@ div {
 @keyframes pic1move {
     0%{
         transform: translateX(10%);
+        transform: rotate(180deg);
     }
 
     50%{
         transform: translateX(40%);
+        transform: rotate(180deg);
     }
 
     100%{
@@ -137,7 +142,7 @@ div {
 .uppertext1 {
     font-family: 'Bangers', cursive;
     font-style: italic;
-    font-size: 59px;
+    font-size: 200px;
     position: relative;
     top: 100px;
     left: 702px;
@@ -184,12 +189,13 @@ div {
     margin-left: 0px;
     display: inline;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 
 .bttext1{
-    text-align: centre;
+    text-align: right;
+    font-size: 10px;
 }
 
 .bttext2{
@@ -206,13 +212,13 @@ form{
 
 .footer-linkedin{
     width: 44px;
-    margin-left: 674px;
+    margin-left: 438px;
     margin-right: 10px;
 }
 
 .footer-github{
-    margin-left: 51px;
-    width: 44px;
+    margin-left: 151px;
+    width: 90px;
 }
 
 .copybox{
