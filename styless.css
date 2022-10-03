@@ -241,3 +241,9 @@ form{
 .text{
     margin-left: 207px;
 }
+
+.form_name{
+    text-decoration: line-through;
+    color: darkblue;
+
+}
