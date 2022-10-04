@@ -1,10 +1,10 @@
 body {
     background-color: rgb(249, 249, 98);
-    overflow-x: hidden; 
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .events {
-    width: 105vmax;
     background-color: rgb(248, 252, 248);
     position: relative;
     padding-top: 1px;
@@ -51,7 +51,6 @@ h3 {
 .webphoto {
     position: relative;
     left: 28px;
-    width: 25vmax;
     float: left;
 }
 
@@ -104,8 +103,8 @@ div {
 
 .pic1 {
     position: relative;
-    top: 124px;
-    left: 270px;
+    top: 7rem !important;
+    left: 17rem !important;
     animation-name: pic1move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -115,12 +114,10 @@ div {
 @keyframes pic1move {
     0%{
         transform: translateX(10%);
-        transform: rotate(180deg);
     }
 
     50%{
         transform: translateX(40%);
-        transform: rotate(180deg);
     }
 
     100%{
@@ -143,9 +140,10 @@ div {
     font-family: 'Bangers', cursive;
     font-style: italic;
     font-size: 200px;
-    position: relative;
+    /* position: relative;
     top: 100px;
-    left: 702px;
+    left: 702px; */
+    padding-left: 55rem;
     line-height: 0.5;
 }
 
@@ -153,10 +151,7 @@ div {
     font-family: 'Bangers', cursive;
     font-style: italic;
     font-size: 50px;
-    position: relative;
-    top: 100px;
-    left: 635px;
-    line-height: 0.5;
+    position: absolute;
 }
 
 .event-row1{
@@ -174,10 +169,10 @@ div {
 .markphoto{
     position: absolute;
     left: 1030px;
-    width: 25vmax;
     float: left;
     margin-bottom: 260px;
     margin-left: 10px;
+    width: 25rem;
 }
 
 .digimark{
@@ -222,16 +217,14 @@ form{
 }
 
 .copybox{
-    width: 110vmax;
+    width: 190%;
     position: relative;
-    right: 10px;
-    top: 8px;
     background-color: black;
 }
 
 .copyright{
     color: aqua;
-    margin-left: 691px;
+    text-align: center;
 }
 
 .contact-me{
@@ -246,4 +239,86 @@ form{
     text-decoration: line-through;
     color: darkblue;
 
+}
+
+/* //for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+a a:hover{
+	text-decoration: none;
+}
+
+.logo a{
+	text-decoration: none;
+}
+.logo a img{
+	width: 45px;
+	margin-right: 15px;
+}
+nav{
+	background-color: #222222;
+	padding: 8px 20px;
+	display: flex;
+	align-items: center;
+}
+nav a{
+	color: #ffffff;
+}
+nav a:hover{
+	color: #7575a3
+}
+.logo{
+	flex: 1;
+}
+.logo a{
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+}
+.logo a:hover{
+	color: #ffffff;
+}
+.menu{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.menu li{
+	padding: 15px 10px;
+	font-size: 16px;
+}
+.menu li a{
+	text-decoration: none;
+	font-weight: bold;
+}
+.bottom-nav{
+	font-size: 30px;
+	display: none;
+}
+@media screen and (max-width: 600px){
+	nav{
+		display: block;
+		position: relative;
+		padding: 15px 20px;
+	}
+	.menu{
+		margin-top: 15px;
+		display: none;
+	}
+	.menu.active, .bottom-nav{
+		display: block;
+	}
+	.bottom-nav{
+		position: absolute;
+		top: 15px;
+		right: 20px;
+	}
 }
