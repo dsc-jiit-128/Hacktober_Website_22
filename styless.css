@@ -189,8 +189,8 @@ div {
 
 
 .bttext1{
-    text-align: right;
-    font-size: 10px;
+    text-align: center;
+   
 }
 
 .bttext2{
@@ -202,7 +202,7 @@ div {
 }
 
 form{
-    margin-left: 631px;
+    margin-left: 50px;
 }
 
 .footer-linkedin{
