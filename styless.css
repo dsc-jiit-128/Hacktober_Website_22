@@ -303,6 +303,14 @@ nav a:hover{
 	font-size: 30px;
 	display: none;
 }
+#about{
+    color: aqua;
+}
+#about:hover{
+    color: white;
+    
+    
+}
 @media screen and (max-width: 600px){
 	nav{
 		display: block;
