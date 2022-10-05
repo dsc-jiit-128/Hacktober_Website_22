@@ -13,15 +13,21 @@ body {
   margin-right: -10px;
 }
 
+.events h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
 .devtext {
   margin-left: 434px;
   font-family: "Montserrat", sans-serif;
   margin-right: 207px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .webdevhead {
   margin-left: 429px;
+  font-size: 35px;
 }
 
 hr {
@@ -56,7 +62,7 @@ h3 {
 .gdsc {
   font-size: 20px;
   text-align: center;
-  margin: 10px 314px auto 200px;
+  margin: 10px 200px auto 200px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -68,6 +74,7 @@ div {
   position: relative;
   bottom: 320px;
   left: 1000px;
+  height: 350px;
   animation-name: pic2move;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -172,6 +179,7 @@ div {
 
 .digimark {
   margin-left: 769px;
+  font-size: 30px;
 }
 
 .marktext {
@@ -179,7 +187,7 @@ div {
   margin-left: 0px;
   display: inline;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .bttext1 {
@@ -199,20 +207,25 @@ form {
 }
 
 .footer-linkedin {
-  width: 44px;
-  margin-left: 438px;
+  width: 50px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
 .footer-github {
-  margin-left: 151px;
-  width: 90px;
+  margin-left: 10px;
+  width: 50px;
 }
 
 .copybox {
-  width: 190%;
+  width: 100%;
   position: relative;
   background-color: black;
+}
+
+.bottom-container {
+  text-align: center;
+  width: 100%;
 }
 
 .copyright {
@@ -346,9 +359,15 @@ form {
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: absolute;
   padding: 20px;
-  bottom: -26%;
+  bottom: -29%;
   left: 33%;
 }
+
+.card h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -416,7 +435,8 @@ button {
   border-radius: 20px;
 }
 .xy{
-    margin: 20px;
-    margin-left: 200px;
-    margin-bottom: -90px;
+  margin: 20px;
+  margin-left: 200px;
+  margin-bottom: -90px;
+  font-size: 28px;
 }
