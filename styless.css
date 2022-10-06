@@ -11,13 +11,14 @@ body {
   margin-top: -218px;
   margin-left: -8px;
   margin-right: -10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .devtext {
   margin-left: 434px;
   font-family: "Montserrat", sans-serif;
   margin-right: 207px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .webdevhead {
@@ -44,7 +45,7 @@ h2 {
 }
 
 h3 {
-  margin-left: 576px;
+  margin-left: 556px;
 }
 
 .webphoto {
@@ -134,17 +135,17 @@ div {
 .uppertext1 {
   font-family: "Bangers", cursive;
   font-style: italic;
-  font-size: 200px;
-  /* position: relative;
-    top: 100px;
-    left: 702px; */
-  padding-left: 55rem;
+  font-size: 100px;
+  position: relative;
+  text-align: left;
   line-height: 0.5;
+  margin-top: 50px;
+  padding: 5%;
 }
 
 .uppertext2 {
-  font-family: "Bangers", cursive;
-  font-style: italic;
+   font-family: "Bangers", cursive;
+  font-style: normal;
   font-size: 50px;
   position: absolute;
 }
@@ -153,12 +154,17 @@ div {
   background-color: rgb(105, 105, 255);
   margin-top: 36px;
   margin-bottom: 32px;
+  padding: 3%;
+  font-size: 60px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 .event-row2 {
   background-color: rgb(255, 71, 20);
   margin-bottom: 130px;
-  margin-left: 57px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 .markphoto {
@@ -171,19 +177,24 @@ div {
 }
 
 .digimark {
-  margin-left: 769px;
+  margin-left: 403px;
+  padding: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: left;
 }
 
 .marktext {
   margin-right: -7430px;
-  margin-left: 0px;
   display: inline;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  margin-left: 434px;
+  font-size: 20px;
 }
 
 .bttext1 {
   text-align: center;
+  padding: 5%;
 }
 
 .bttext2 {
@@ -265,7 +276,7 @@ nav a {
   color: #ffffff;
 }
 nav a:hover {
-  color: #7575a3;
+  color: #7555a3;
 }
 .logo {
   flex: 1;
