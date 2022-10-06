@@ -404,6 +404,10 @@ textarea {
   padding-left: 90px; /* same size as the label elements */
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 button {
   /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
