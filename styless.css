@@ -4,321 +4,298 @@ body {
     overflow-x: hidden;
 }
 
-.events {
-    background-color: rgb(248, 252, 248);
-    position: relative;
-    padding-top: 1px;
-    margin-top: -218px;
-    margin-left: -8px;
-    margin-right: -10px;
-}
-
-.devtext{
-    margin-left: 434px;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 207px;
-    font-size: 16px;
-}
-
-.webdevhead{
-    margin-left: 429px;
-
-}
-
-hr{
-    border-style: dashed;
-    height: -5px;
-    width: 5%;
-    font-size: xx-large;
-}
-
-.myphoto {
-    display: inline-block;
-    width: 296px;
-    margin-top: 10px;
-    margin-left: 647px;
-}
-
-h2 {
-    text-align: center;
-    font-size: xx-large;
-}
-
-h3 {
-    margin-left: 576px;
-}
-
-.webphoto {
-    position: relative;
-    left: 28px;
-    float: left;
-}
-
-.gdsc{
-    font-size: 20px;
-    text-align:center;
-    margin: 10px 314px auto 200px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-div {
-    display: inline-block;
-}
-
-.pic2 {
-    position: relative;
-    bottom: 320px;
-    left: 1000px;
-    animation-name: pic2move;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes pic2move{
-    0%{
-        transform: translateX(30%);
-        transform: rotate(170deg);
-    }
-
-    50%{
-        transform: translateX(20%);
-        transform: rotate(1500deg);
-    }
-
-    100%{
-        transform: translateX(40%);
-        transform: rotate(190deg);
-    }
-
-    50%{
-        transform: translateX(-70%);
-    }
-
-    0%{
-        transform: translateX(-10%);
-    }
-
-}
-
 .pic1 {
     position: relative;
-    top: 7rem !important;
-    left: 17rem !important;
+    left: 11rem;
     animation-name: pic1move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes pic1move {
-    0%{
-        transform: translateX(10%);
+.pic2 {
+    position: relative;
+    top: 7rem;
+    left: 40vw;
+    animation-name: pic2move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pic2move {
+    0% {
+        transform: translateX(30%);
+        transform: rotate(170deg);
     }
 
-    50%{
+    50% {
+        transform: translateX(20%);
+        transform: rotate(1500deg);
+    }
+
+    100% {
         transform: translateX(40%);
+        transform: rotate(190deg);
     }
 
-    100%{
-        transform: translateX(40%);
-    }
-
-    50%{
+    50% {
         transform: translateX(-70%);
     }
 
-    0%{
+    0% {
+        transform: translateX(-10%);
+    }
+
+}
+
+
+@keyframes pic1move {
+    0% {
+        transform: translateX(10%);
+    }
+
+    50% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(40%);
+    }
+
+    50% {
+        transform: translateX(-70%);
+    }
+
+    0% {
         transform: translateX(-10%);
     }
 
 
 }
 
+.container-img {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
 
 .uppertext1 {
-    font-family: 'Bangers', cursive;
-    font-style: italic;
+    margin: auto;
     font-size: 200px;
-    /* position: relative;
-    top: 100px;
-    left: 702px; */
-    padding-left: 55rem;
-    line-height: 0.5;
-}
-
-.uppertext2 {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     font-style: italic;
-    font-size: 50px;
-    position: absolute;
 }
 
-.event-row1{
-    background-color: rgb(105, 105, 255);
-    margin-top: 36px;
-    margin-bottom: 32px;
+.gdsc {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.event-row2{
-    background-color: rgb(255, 71, 20);
-    margin-bottom: 130px;
-    margin-left: 57px;
+.home {
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.markphoto{
-    position: absolute;
-    left: 1030px;
-    float: left;
-    margin-bottom: 260px;
-    margin-left: 10px;
-    width: 25rem;
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 5vh;
 }
 
-.digimark{
-    margin-left: 769px;
+.events h1{
+    padding: 1vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.bitbox{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;    
 }
 
 .marktext{
-    margin-right: -7430px;
-    margin-left: 0px;
-    display: inline;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 1.1rem;
 }
 
+.days{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;    
+}
 
-.bttext1{
+.heading{
+    color: #0f0f52;
+}
+
+.img img{
+    height: 35vh;
+}
+
+.img1{
+    right: 0px;
+}
+
+.img1 img{
+    height: 35vh;
+}
+
+.contact{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-   
+    height: 90vh;
 }
 
-.bttext2{
-    text-align: centre;
+.contact input{
+    padding:5px;
+    margin: 1vh;
 }
 
-.bttext3{
-    text-align: center;
+.parts{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
 }
 
-form{
-    margin-left: 50px;
+.parts input{
+    width: 40vw;
+    padding:5px;
+    margin: 1vh;
 }
 
-.footer-linkedin{
-    width: 44px;
-    margin-left: 438px;
-    margin-right: 10px;
+.parts textarea{
+    padding:5px;
+    width: 40vw;
+    margin: 1vh
 }
 
-.footer-github{
-    margin-left: 151px;
-    width: 90px;
-}
-
-.copybox{
-    width: 190%;
-    position: relative;
-    background-color: black;
-}
-
-.copyright{
-    color: aqua;
-    text-align: center;
-}
-
-.contact-me{
-    position: static;
-}
-
-.text{
-    margin-left: 207px;
-}
-
-.form_name{
-    text-decoration: line-through;
-    color: darkblue;
-
-}
 
 /* //for navbar */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body{
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Roboto', sans-serif;
-}
-a a:hover{
-	text-decoration: none;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo a{
-	text-decoration: none;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-.logo a img{
-	width: 45px;
-	margin-right: 15px;
+
+a a:hover {
+    text-decoration: none;
 }
-nav{
-	background-color: #222222;
-	padding: 8px 20px;
-	display: flex;
-	align-items: center;
+
+.logo a {
+    text-decoration: none;
 }
-nav a{
-	color: #ffffff;
+
+.logo a img {
+    width: 45px;
+    margin-right: 15px;
 }
-nav a:hover{
-	color: #7575a3
+
+.back-nav {
+    background-color: #222222;
+    margin-bottom: 20vh;
 }
-.logo{
-	flex: 1;
+
+nav {
+    margin: auto;
+    width: 95%;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
 }
-.logo a{
-	display: flex;
-	align-items: center;
-	font-size: 20px;
+
+nav a {
+    color: #ffffff;
 }
-.logo a:hover{
-	color: #ffffff;
+
+nav a:hover {
+    color: #7575a3
 }
-.menu{
-	display: flex;
-	align-items: center;
-	list-style: none;
+
+.logo {
+    flex: 1;
 }
-.menu li{
-	padding: 15px 10px;
-	font-size: 16px;
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
-.menu li a{
-	text-decoration: none;
-	font-weight: bold;
+
+.logo a:hover {
+    color: #ffffff;
 }
-.bottom-nav{
-	font-size: 30px;
-	display: none;
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
-@media screen and (max-width: 600px){
-	nav{
-		display: block;
-		position: relative;
-		padding: 15px 20px;
-	}
-	.menu{
-		margin-top: 15px;
-		display: none;
-	}
-	.menu.active, .bottom-nav{
-		display: block;
-	}
-	.bottom-nav{
-		position: absolute;
-		top: 15px;
-		right: 20px;
-	}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-nav {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .bottom-nav {
+        display: block;
+    }
+
+    .bottom-nav {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
 }
