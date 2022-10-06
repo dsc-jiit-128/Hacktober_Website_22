@@ -283,6 +283,12 @@ nav a:hover {
   align-items: center;
   list-style: none;
 }
+.d-flex {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 15px 10px;
+}
 .menu li {
   padding: 15px 10px;
   font-size: 16px;
