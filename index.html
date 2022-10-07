@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
     <!-- navbar -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,71 +31,47 @@
 </head>
 
 <body>
-
-
     <!-- navbar code -->
-
-    <div class="back-nav">
-        <nav>
-            <div class="logo">
-                <a href="#">Logo</a>
-            </div>
-            <div class="bottom-nav">
-                <a href="#">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </a>
-            </div>
-            <ul class="menu">
-                <li><a href="#">About GDSC</a></li>
-                <li><a href="#">Chapters</a></li>
-                <li><a href="#">Upcoming Events</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="home">
-        <div class="container-img">
-            <img class="pic1" src="1_GUnXaV_rVzuce67X__7G6w_2x-removebg-preview.png" alt="">
-            <!-- <img class="pic2" src="unnamed-removebg-preview (1).png" alt=""> -->
-            <p class="uppertext1"> GDCS </p>
-        </div>
-        <p class="gdsc">GDCS stands for Google Developer's Student Club. It is a strong community lead by Google
 
     <nav>
         <div class="logo">
-            <a href="#">GDSC</a>
+            <image src="gdsc-logo.png" class="gdsc-logo">
         </div>
         <div class="bottom-nav">
             <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
         </div>
         <ul class="menu">
-            <li><a href="#">About GDSC</a></li>
+            <li><a href="#about-gdsc">About GDSC</a></li>
             <li><a href="#">Chapters</a></li>
-            <li><a href="#">Upcoming Events</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#upcoming">Upcoming Events</a></li>
+            <li><a href="#contact-form">Contact Us</a></li>
         </ul>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </form>
     </nav>    
+    <div class="home">
+        <div class="container-img">
+            <img class="pic1" src="gdsc-logo.png" alt="">
+            <!-- <img class="pic2" src="unnamed-removebg-preview (1).png" alt=""> -->
+            <p class="uppertext1"> GDCS </p>
+        </div>
+        <p class="gdsc">GDCS stands for Google Developer's Student Club. It is a strong community lead by Google
 
-    <img class="pic1" src="1_GUnXaV_rVzuce67X__7G6w_2x-removebg-preview.png" alt="">
-    <p class="uppertext1"> GDcs </p>
-    <p class="uppertext2" style="color: rgb(241, 241, 74);">THIS SIDE !?! </p>
-    <img class="pic2" src="unnamed-removebg-preview (1).png" alt="">
-    <hr>
-    <div class="events" style="background-color: rgb(8, 210, 8);">
-        <p class="gdsc">GDcS stands for Ggle Developer's Student Club. It is a strong community lead by Google
 
-            Delopers. We are working towards pushing students in the area of new technologies. Lorem ipsum dolor sit
+    <br>
+    <div class="container">
+    <div class="events event-1" style="background-color: rgb(8, 210, 8);">
+        <p class="gdsc" id="about-gdsc">GDcS stands for Google Developer's Student Club. It is a strong community lead by Google
+            Developers. We are working towards pushing students in the area of new technologies. Lorem ipsum dolor sit
             amet consectetur, adipisicing elit. Provident eveniet rerum impedit! Reprehenderit error dolorem
             exercitationem reiciendis tempore veritatis, saepe nostrum blanditiis numquam culpa neque eligendi possimus
             corporis dolor consectetur? </p>
     </div>
     <br>
-    <!-- <hr> -->
-    <div class="events">
+    <!-- <br> -->
+    <div class="events event-2" id="upcoming">
         <h1>EVENTS AND OUR SESSIONS</h1>
         <div class="event-row1">
             <h3 class="heading">1. BITBOX </h3>
@@ -120,6 +95,8 @@
         <br>
         <div class="event-row2">
             <h3 class="heading">2. 30 DAYS OF GOOGLE CLOUD</h3>
+            <br>
+            <br>
             <div class="days">
                 <div class="marktext">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsum nihil. Vitae rem, odio
@@ -134,13 +111,17 @@
                 <div class="img1"><img class="markphoto" src="Google-Cloud-Emblem.png" alt=""></div>
             </div>
         </div>
+    </div>
 
 
-        <hr>
-        <div class="contact">
-            <h1 class="bttext1">"GET ALONG WITH GDSC IN THE JOUNEY OF DEVELOPNT"</h1>
-            <h2 class="bttext2">LET'S COLORATE</h2>
-            <div class="contact-me">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <h1 class="bttext1">"GET ALONG WITH GDSC IN THE JOUNEY OF DEVELOPMENT"</h1>
+            <h2 class="bttext2">LET'S COLLABORATE</h2>
+            <div class="contact" id="contact-form">
                 <div class="form">
                     <div class="parts">
                         <input type="text" placeholder="Name">
@@ -152,92 +133,29 @@
                         <input type="number" placeholder="Phone Number">
                     </div>
                     <div class="parts">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Write any message..."></textarea>
+                        <textarea class="txt" cols="30" rows="10" placeholder="Write any message..."></textarea>
                     </div>
-                    <input type="submit">
-                </div>
-
-    </div>
-    <hr>
-    <!-- <div class="contact-me">
-        <div>
-            <h1 class="bttext1" >"GET ALONG WITH GDSC IN THE JOUNEY OF DEVELOPMENT"</h1>
-            <h2 class="bttext1">LET'S COLLABORATE</h2>
-        </div>
-        <form action="" >
-            <label><b>NAME :- </b></label>
-            <input type="text"><br><br><br>
-            <label><b>EMAIL :- </b></label>
-            <input type="email"><br><br><br>
-            <label><b>PHONE NO. :- </b></label>
-            <input type="number"><br><br><br>
-            <label><b>ANY MESSAGE :- </b></label><br><br>
-            <textarea name="" id="" cols="30" rows="10">write your message</textarea><br><br><br>
-            <input type="submit">
-        </form>
-
-        <hr> -->
-        <!-- <div class="contact-me">
-            <div class="text">
-                <h1 class="bttext1">"GET ALONG WITH GDSC IN THE JOUNEY OF DEVELOPNT"</h1>
-                <h2 class="bttext2">LET'S COLORATE</h2>
-
+                    <button type="submit" class="submit-btn">Submit</button>
             </div>
-        </div>
-
-
-        <br><br><br> -->
-
-       
+    <br>
+    <br>
+    <br>
 
         <div class="bottom-container">
-            <a class="" href="https://www.linkedin.com/company/dsc-jiit"><img class="footer-linkedin" src="linkedin.png"
+            <a class="logo" href="https://www.linkedin.com/company/dsc-jiit"><img class="footer-linkedin" src="linkedin.png"
                     alt="" style="height: 40px;"></a>
 
-            <a class="" href="https://github.com/dsc-jiit-128"><img class="footer-github" src="github-logo.png"
+            <a class="logo" href="https://github.com/dsc-jiit-128"><img class="footer-github" src="github-logo.png"
                     alt="" style="height: 40px;"></a>
-            <div class="copybox">
-                <p class="copyright">© GDCS.</p>
+            <div class="logo">
+                <span class="copyright">© GDCS</span>
             </div>
         </div>
+</div>
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    </div>
-   
-    <h1 class="xy">"GET ALONG WITH GDSC IN THE JOUNEY OF DEVELOPMENT"</h1>
-        <!-- Form Portion -->
-        <div class='card'>
-            <h1>LET'S COLLABORATE</h1>
-            <form action='post' method='post'>
-              <ul>
-                <li>
-                  <label for='name'>Name:</label>
-                  <input type='text' id='name' name='user_name' required>
-                </li>
-                <li>
-                  <label for='mail'>E-mail:</label>
-                  <input type='email' id='mail' name='user_email'required>
-                </li>
-                <li>
-                    <label for='mail'>Number:</label>
-                    <input type='number' id='number' name='user_number'required>
-                  </li>
-                <li>
-                  <label for='msg'>
-                    Message:
-                  </label>
-                  <textarea id='msg' name='user_msg'></textarea>
-                </li>
-                <li class="button">
-                  <button type="submit"><b>Send your message</b></button>
-                </li>
-          
-              </ul>
-            </form>
-          </div>        
-
-  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

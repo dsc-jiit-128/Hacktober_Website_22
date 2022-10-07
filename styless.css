@@ -3,10 +3,14 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font:sans-serif;
+}
 
 .pic1 {
-    position: relative;
     left: 11rem;
     animation-name: pic1move;
     animation-duration: 5s;
@@ -17,36 +21,27 @@ body {
 
 .events {
   background-color: rgb(248, 252, 248);
-  position: relative;
   padding-top: 1px;
-  margin-top: -218px;
-  margin-left: -8px;
-  margin-right: -10px;
+  border-radius: 10px;
 }
 
 .devtext {
-  margin-left: 434px;
   font-family: "Montserrat", sans-serif;
-  margin-right: 207px;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
-.webdevhead {
-  margin-left: 429px;
+.container{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-hr {
-  border-style: dashed;
-  height: -5px;
-  width: 5%;
-  font-size: xx-large;
-}
-
 .myphoto {
   display: inline-block;
   width: 296px;
   margin-top: 10px;
-  margin-left: 647px;
+  /* margin-left: 647px; */
 }
 
 h2 {
@@ -54,25 +49,18 @@ h2 {
   font-size: xx-large;
 }
 
-h3 {
-  margin-left: 576px;
-}
 
 .webphoto {
-  position: relative;
-  left: 28px;
-  float: left;
+margin: 30px;
 }
 
 .gdsc {
-  font-size: 20px;
   text-align: center;
-  margin: 10px 314px auto 200px;
+  /* margin: 10px 314px auto 200px; */
   font-family: "Montserrat", sans-serif;
 }
-
-div {
-  display: inline-block;
+.gdsc-logo{
+  width: 7em;
 }
 
 
@@ -135,12 +123,19 @@ div {
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin: auto;
 }
 
+.event-1{
+  width: 75%;
+  margin-left: 17em;
+}
+.event-2{
+  width: 80%;
+  margin-right: 15em;
+}
 .uppertext1 {
     margin: auto;
-    font-size: 200px;
+    font-size: 8em;
     font-family: "Bangers", cursive;
     font-style: italic;
 }
@@ -165,23 +160,16 @@ div {
 
 .events{
     display: flex;
+    /* width: 80%; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    margin: auto;
     padding: 5vh;
 }
 
-.events h1{
-    padding: 1vh;
-    font-weight: bold;
-    margin-bottom: 5vh;
-}
 
 .bitbox{
     display: flex;
-    flex-direction: row;
     margin: auto;
     align-items: center;
     justify-content: center;    
@@ -189,6 +177,7 @@ div {
 
 .marktext{
     font-size: 1.1rem;
+    /* margin-left: 140px; */
 }
 
 .days{
@@ -203,32 +192,29 @@ div {
     color: #0f0f52;
 }
 
-.img img{
-    height: 35vh;
-}
-
-.img1{
-    right: 0px;
-}
-
-.img1 img{
-    height: 35vh;
+.markphoto{
+  width: 20em;
 }
 
 .contact{
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 7vh;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 90vh;
 }
 
 .contact input{
+    border-radius: 10px;
+    border: 2px black solid;
     padding:5px;
     margin: 1vh;
+}
+.part{
+  border-radius: 10px;
+  border:2px solid black;
 }
 
 .parts{
@@ -237,6 +223,13 @@ div {
     width: 200%;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
 .parts input{
     width: 40vw;
     padding:5px;
@@ -246,10 +239,38 @@ div {
 .parts textarea{
     padding:5px;
     width: 40vw;
-    margin: 1vh
+    margin: 1vh;
+    margin-bottom: 20px;
+}
+
+.submit-btn{
+  padding: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: auto;
+  border:1px solid black;
+  margin-bottom: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  height: 2em;
+}
+
+.send-mssg-form{
+  display: flex;
+  flex-direction: column;
 }
 
 
+.bottom-container{
+  display: flex;
+  width:50%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin:15px;
+}
 /* //for navbar */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 
@@ -257,6 +278,9 @@ div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1{
+  font-size: 25px;
 }
 
 body {
@@ -284,10 +308,10 @@ a a:hover {
 
 nav {
     margin: auto;
-    width: 95%;
     padding: 8px 20px;
     display: flex;
-    align-items: center;
+    background-color: #0f0f52;
+    /* align-items: center; */
 }
 
 nav a {
@@ -333,16 +357,51 @@ nav a:hover {
     display: none;
 }
 
+button {
+  margin-left: 0em;
+  padding: 20px;
+  color: white;
+  border: 1px none;
+  display: flex;
+  align-items: center;
+  padding: auto;
+  font-size: 14px;
+  background-color: #4169e1;
+  border-radius: 20px;
+}
+.d-flex > input{
+  height: 3em;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.d-flex>button{
+  height: 1em;
+  margin-left: 10px;
+}
+img{
+  margin-right: 0;
+}
+@media screen and (max-width: 800px){
+  .event-1{
+    margin-left:0 ;
+  }
+  .event-2{
+    margin-right: 0;
+  }
+  .webphoto{
+    display: none;
+  }
+ .markphoto{
+  display: none;
+ }
+ .d-flex{
+  display: none;
+}
+}
 @media screen and (max-width: 600px) {
-    nav {
-        display: block;
-        position: relative;
-        padding: 15px 20px;
-    }
-
-    .menu {
-        margin-top: 15px;
-        display: none;
+    img{
+      display: none;
     }
 
     .menu.active,
@@ -355,14 +414,12 @@ nav a:hover {
         top: 15px;
         right: 20px;
     }
+    
 
 .uppertext1 {
   font-family: "Bangers", cursive;
   font-style: italic;
   font-size: 200px;
-  /* position: relative;
-    top: 100px;
-    left: 702px; */
   padding-left: 55rem;
   line-height: 0.5;
 }
@@ -371,40 +428,14 @@ nav a:hover {
   font-family: "Bangers", cursive;
   font-style: italic;
   font-size: 50px;
-  position: absolute;
-}
-
-.event-row1 {
-  background-color: rgb(105, 105, 255);
-  margin-top: 36px;
-  margin-bottom: 32px;
-}
-
-.event-row2 {
-  background-color: rgb(255, 71, 20);
-  margin-bottom: 130px;
-  margin-left: 57px;
-}
-
-.markphoto {
-  position: absolute;
-  left: 1030px;
-  float: left;
-  margin-bottom: 260px;
-  margin-left: 10px;
-  width: 25rem;
-}
-
-.digimark {
-  margin-left: 769px;
+  /* position: absolute; */
 }
 
 .marktext {
-  margin-right: -7430px;
-  margin-left: 0px;
   display: inline;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .bttext1 {
@@ -419,21 +450,6 @@ nav a:hover {
   text-align: center;
 }
 
-form {
-  margin-left: 50px;
-}
-
-.footer-linkedin {
-  width: 44px;
-  margin-left: 438px;
-  margin-right: 10px;
-}
-
-.footer-github {
-  margin-left: 151px;
-  width: 90px;
-}
-
 .copybox {
   width: 190%;
   position: relative;
@@ -445,17 +461,16 @@ form {
   text-align: center;
 }
 
-.contact-me {
-  position: static;
-}
-
-.text {
-  margin-left: 207px;
-}
-
 .form_name {
   text-decoration: line-through;
   color: darkblue;
+}
+
+
+.txt{
+  height:10em;
+  border: 5px;
+  border-radius: 10px;
 }
 
 /* //for navbar */
@@ -478,7 +493,7 @@ a a:hover {
 }
 .logo a img {
   width: 45px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 nav {
   background-color: #222222;
@@ -509,10 +524,7 @@ nav a:hover {
   list-style: none;
 }
 .d-flex {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 15px 10px;
+  display: none;
 }
 .menu li {
   padding: 15px 10px;
@@ -526,6 +538,9 @@ nav a:hover {
   font-size: 30px;
   display: none;
 }
+*{
+  font-size: 1em;
+}
 #about {
   color: aqua;
 }
@@ -533,10 +548,8 @@ nav a:hover {
   color: white;
 }
 @media screen and (max-width: 600px) {
-  nav {
-    display: block;
-    position: relative;
-    padding: 15px 20px;
+  .top-nav{
+    display: none;
   }
   .menu {
     margin-top: 15px;
@@ -553,18 +566,8 @@ nav a:hover {
   }
 }
 
-/* for form */
-/* body{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    background: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/02/Usign-Gradients-Featured-Image.jpg);
-    background-size: cover;
-  } */
 form {
-  /* Center the form on the page */
-  margin: 0 auto;
   width: 400px;
-  /* Form outline */
   padding: 1em;
   border-radius: 1em;
 }
@@ -575,10 +578,7 @@ form {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  position: absolute;
   padding: 20px;
-  bottom: -26%;
-  left: 33%;
 }
 ul {
   list-style: none;
@@ -588,14 +588,6 @@ ul {
 
 form li + li {
   margin-top: 1em;
-}
-
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-  padding-right: 5px;
 }
 
 input,
@@ -639,20 +631,15 @@ button:hover{
   cursor: pointer;
 }
 
+/* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
 button {
-  /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
   margin-left: 0em;
   padding: 20px;
   color: white;
   border: 1px none;
-  font-size: 14px;
+  font-size: 1em;
   background-color: #4169e1;
   border-radius: 20px;
 }
-.xy{
-    margin: 20px;
-    margin-left: 200px;
-    margin-bottom: -90px;
-
 }
