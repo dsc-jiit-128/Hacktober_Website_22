@@ -280,14 +280,12 @@ a a:hover {
 
 .back-nav {
     background-color: #222222;
-    /* margin-bottom: 20vh; */
-    width: 100%;
-    height: 65px;
+    margin-bottom: 20vh;
 }
 
 nav {
     margin: auto;
-    /* width: 100%; */
+    width: 95%;
     padding: 8px 20px;
     display: flex;
     align-items: center;
@@ -357,7 +355,6 @@ nav a:hover {
         position: absolute;
         top: 15px;
         right: 20px;
-        transition: all .5s ease;
     }
 
 .uppertext1 {
@@ -668,5 +665,5 @@ button {
     margin: 20px;
     margin-left: 200px;
     margin-bottom: -90px;
-}
+
 }
