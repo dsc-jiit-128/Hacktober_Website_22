@@ -299,6 +299,7 @@ nav a:hover {
     color: #7575a3
 }
 
+
 .logo {
     flex: 1;
 }
@@ -665,5 +666,5 @@ button {
     margin: 20px;
     margin-left: 200px;
     margin-bottom: -90px;
-
+}
 }
