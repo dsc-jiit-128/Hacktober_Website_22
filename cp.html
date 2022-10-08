@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESPONSIVE CALENDER</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="evo-calendar.min.css">
+  <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="aryan">
+
+  <div id="calendar"></div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="evo-calendar.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    $('#calendar').evoCalendar({
+
+      theme: "Midnight Blue",
+
+      calendarEvents: [
+      {
+        id: 'Event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2022", // Event date (required)
+        description:"May you have a prosperous New Year. Wishing you a happy, healthy New Year. May the New Year bless you with health, wealth, and happiness.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event2', // Event's ID (required)
+        name: "Women's Day", // Event name (required)
+        date: "March/8/2022", // Event date (required)
+        description:"This is a special day to celebrate the achievements achieved by women in social to political life, and to emphasize gender equality.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event3', // Event's ID (required)
+        name: "Labour Day", // Event name (required)
+        date: "May/1/2022", // Event date (required)
+        description:"Labour Day is observed to celebrate the hard work and contributions of the labourers in nation's growth and development.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event4', // Event's ID (required)
+        name: "Gandhi Jayanti", // Event name (required)
+        date: "October/2/2022", // Event date (required)
+        description:"This day is observed as a national holiday and is the third national holiday after Independence Day and Republic Day. It is also celebrated worldwide as the International Day of Non-Violence.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event5', // Event's ID (required)
+        name: "Diwali Festival", // Event name (required)
+        date: "October/24/2022", // Event date (required)
+        description:"This festival is celebrated in the memory of Lord Rama who returned to Ayodhya after fourteen years of exile.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event6', // Event's ID (required)
+        name: "Christmas Festival", // Event name (required)
+        date: "December/25/2022", // Event date (required)
+        description:"It is a holiday to celebrate the birth of Jesus Christ.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event7', // Event's ID (required)
+        name: "Gurpurab Jayanti", // Event name (required)
+        date: "November/8/2022", // Event date (required)
+        description:"Guru Nanak Jayanti, also known as Gurpurab, is celebrated across the country to mark the birth anniversary of Guru Nanak Dev, the founder of Sikhism.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event8', // Event's ID (required)
+        name: "Income Tax Pay Day", // Event name (required)
+        date: "April/18/2022", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event9', // Event's ID (required)
+        name: "April Fool's Day", // Event name (required)
+        date: "April/1/2022", // Event date (required)
+        description: "April Fools' Day or April Fool's Day is an annual custom on 1 April consisting of practical jokes and hoaxes.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event10', // Event's ID (required)
+        name: "Best Friends Day", // Event name (required)
+        date: "June/8/2022", // Event date (required)
+        description: "Relation of friendship is greater than the relation of blood ! HAPPY BEST FRIENDS DAY.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event11', // Event's ID (required)
+        name: "National Doctor's Day", // Event name (required)
+        date: "July/1/2022", // Event date (required)
+        description: "This day is celebrated to honor all the doctors for their contribution to society.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event12', // Event's ID (required)
+        name: "World Sanskrit Day", // Event name (required)
+        date: "August/3/2022", // Event date (required)
+        description: "It is celebrated on Shraavana Poornima, that is the full moon day of the Shraavana month.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event13', // Event's ID (required)
+        name: "International Youth Day", // Event name (required)
+        date: "August/12/2022", // Event date (required)
+        description: "International Youth Day highlights the series of issues faced by young people all over the world. The day also facilitates the talks on the role of youth in matters such as sustainable development, education, social justice, global peace and inclusiveness.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event14', // Event's ID (required)
+        name: "Teachers' Day", // Event name (required)
+        date: "September/5/2022", // Event date (required)
+        description: "The best teacher's in the world is someone who teaches from the heart not from the book ! Happy Teachers Day !.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event15', // Event's ID (required)
+        name: "International Literacy Day", // Event name (required)
+        date: "September/8/2022", // Event date (required)
+        description: "International Literacy Day (ILD) celebrations have taken place annually around the world to remind the public of the importance of literacy as a matter of dignity and human rights, and to advance the literacy agenda towards a more literate and sustainable society.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event16', // Event's ID (required)
+        name: "Programmer's Day", // Event name (required)
+        date: "September/13/2022", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        id: 'Event17', // Event's ID (required)
+        name: "World Cancer Day", // Event name (required)
+        date: "February/4/2022", // Event date (required)
+        description: "The primary goal of World Cancer Day is to significantly reduce illness and death caused by cancer and is an opportunity to rally the international community to end the injustice of preventable suffering from cancer.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2022", "February/15/2022"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+    })
+})
+</script>
+</body>
+</html>
