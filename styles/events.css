@@ -1,0 +1,248 @@
+body {
+    background-color: rgb(249, 249, 98);
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.back-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    position: relative;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-txt {
+    padding-left: 30px;
+    color: white;
+}
+/* ------- Reusable CSS ------ */
+
+.btn {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ------------Main Section -------------- */
+.container {
+    margin-top: 7rem;
+    width: 90vw;
+    min-height: 80vh;
+    margin-left: 5rem;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-start;
+    align-items: center;
+    left: 0;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.search-input {
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 30rem;
+}
+
+.events-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.single-event {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    padding-bottom: 100px;
+}
+
+.event-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid 1px rgb(250, 250, 112);
+    background-color: white;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.event-date {
+    font-weight: 600;
+}
+
+.event-type {
+    font-weight: 300;
+}
+
+.event-location {
+    color: blue;
+    font-weight: 300;
+}
+
+.event-title {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.event-tags {
+    display: flex;
+    align-items: center;
+}
+
+.event-tag {
+    height: 35px;
+    width: 100px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(146, 146, 146);
+}
+
+.event-summary {
+    color: rgb(107, 105, 105);
+}
+
+.view-more-btn {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+
+/* ------- Screens below 1200px */
+@media screen and (max-width: 1200px){
+    .container {
+        width: 85vw;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        height: 45px;
+    }
+
+    .single-event {
+        grid-template-columns: 1fr;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .view-more-btn {
+        justify-self: flex-start;
+        margin-left: 180px;
+        margin-top: 30px;
+    }
+
+    .search-input {
+        width: 300px;
+    }
+}
+
+
+/* ------- Screens below 919px */
+@media screen and (max-width: 919px){
+
+    .container {
+        width: 88vw;
+        margin-left: 50px;
+    }
+
+    .logo-txt {
+        display: none;
+    }
+
+    .main-title {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .search-box {
+        margin-top: 30px;
+    }
+}
+/* ------- Screens below 600px */
+@media screen and (max-width: 600px){
+
+    .event-desc {
+        flex-direction: column;
+    }
+
+    .single-event {
+        text-align: center;
+    }
+
+    .event-img {
+        margin-bottom: 25px;
+    }
+
+    .event-tags {
+        justify-content: center;
+    }
+
+    .container {
+        width: 88vw;
+        margin-left: 50px;
+    }
+
+    .logo-txt {
+        display: none;
+    }
+
+    .main-title {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .search-box {
+        margin-top: 30px;
+    }
+}
