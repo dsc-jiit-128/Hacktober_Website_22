@@ -284,8 +284,8 @@ a a:hover {
 
 nav {
     margin: auto;
-    width: 95%;
-    padding: 8px 20px;
+    width: 100%;
+    padding: 8px 0px;
     display: flex;
     align-items: center;
 }
