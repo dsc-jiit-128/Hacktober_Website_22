@@ -11,8 +11,9 @@ IMPORTANT INSTRUCTIONS
 1.) Leave a comment under the issue, which you want to work on.
 2.) Do get the issue assigned to you, before you start working on it.
 3.) If the issue is already assigned to someone, you will be added to queue and the issue will be assigned to you if the assigned contributor isn't able to resolve the issue.
+4.) In the  PULL REQUEST, provide a screenshot of the website showing the changes that you have made. A PR without a screenshot will not be reviewed.
 
 
 IMPORTANT NOTICE
 
-To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs made before or after that won't be counted !!!!
+To earn the "Hacktober fest 2022" T-shirt and other goodies, you have to make four Pull requests and it should be merged by the maintainer of the repository. 

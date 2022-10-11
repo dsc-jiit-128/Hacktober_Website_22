@@ -4,6 +4,17 @@ body {
   overflow-x: hidden;
 }
 
+
+.pic1 {
+    position: relative;
+    left: 11rem;
+    animation-name: pic1move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
 .events {
   background-color: rgb(248, 252, 248);
   position: relative;
@@ -64,15 +75,6 @@ div {
   display: inline-block;
 }
 
-.pic2 {
-  position: relative;
-  bottom: 320px;
-  left: 1000px;
-  animation-name: pic2move;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
 
 @keyframes pic2move {
   0% {
@@ -94,20 +96,16 @@ div {
     transform: translateX(-70%);
   }
 
+
   0% {
     transform: translateX(-10%);
   }
 }
 
-.pic1 {
-  position: relative;
-  top: 7rem !important;
-  left: 17rem !important;
-  animation-name: pic1move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
+
+
+
+
 
 @keyframes pic1move {
   0% {
@@ -122,6 +120,7 @@ div {
     transform: translateX(40%);
   }
 
+
   50% {
     transform: translateX(-70%);
   }
@@ -130,6 +129,247 @@ div {
     transform: translateX(-10%);
   }
 }
+
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.uppertext1 {
+    margin: auto;
+    font-size: 200px;
+    font-family: "Bangers", cursive;
+    font-style: italic;
+}
+
+.gdsc {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 5vh;
+}
+
+.events h1{
+    padding: 1vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.bitbox{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;    
+}
+
+.marktext{
+    font-size: 1.1rem;
+}
+
+.days{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;    
+}
+
+.heading{
+    color: #0f0f52;
+}
+
+.img img{
+    height: 35vh;
+}
+
+.img1{
+    right: 0px;
+}
+
+.img1 img{
+    height: 35vh;
+}
+
+.contact{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.contact input{
+    padding:5px;
+    margin: 1vh;
+}
+
+.parts{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+}
+
+.parts input{
+    width: 40vw;
+    padding:5px;
+    margin: 1vh;
+}
+
+.parts textarea{
+    padding:5px;
+    width: 40vw;
+    margin: 1vh
+}
+
+
+/* //for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a a:hover {
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a img {
+    width: 45px;
+    margin-right: 15px;
+}
+
+.back-nav {
+    background-color: #222222;
+    margin-bottom: 20vh;
+}
+
+nav {
+    margin: auto;
+    width: 95%;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #7575a3
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: left;
+    font-size: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.logo a:hover {
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #000;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.menu li {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  display: block;
+  text-align: center;
+}
+
+.menu li a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.bottom-nav {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .bottom-nav {
+        display: block;
+    }
+
+    .bottom-nav {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
 
 .uppertext1 {
   font-family: "Bangers", cursive;
@@ -429,4 +669,5 @@ button {
     margin: 20px;
     margin-left: 200px;
     margin-bottom: -90px;
+}
 }
