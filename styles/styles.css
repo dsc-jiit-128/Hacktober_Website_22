@@ -304,8 +304,10 @@ nav a:hover {
 
 .logo a {
     display: flex;
-    align-items: center;
+    align-items: left;
     font-size: 20px;
+    background-color: #000;
+    color: white;
 }
 
 .logo a:hover {
@@ -316,16 +318,29 @@ nav a:hover {
     display: flex;
     align-items: center;
     list-style: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #000;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-decoration: none;
 }
 
 .menu li {
-    padding: 15px 10px;
-    font-size: 16px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  display: block;
+  text-align: center;
 }
 
 .menu li a {
-    text-decoration: none;
-    font-weight: bold;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
 
 .bottom-nav {
@@ -654,5 +669,5 @@ button {
     margin: 20px;
     margin-left: 200px;
     margin-bottom: -90px;
-
+}
 }
