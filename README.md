@@ -16,6 +16,4 @@ IMPORTANT INSTRUCTIONS
 
 IMPORTANT NOTICE
 
-To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs made before or after that won't be counted !!!
-
-
+To earn the "Hacktober fest 2022" T-shirt and other goodies, you have to make four Pull requests and it should be merged by the maintainer of the repository. 
