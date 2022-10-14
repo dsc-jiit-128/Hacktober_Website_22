@@ -246,7 +246,8 @@ div {
 .parts textarea{
     padding:5px;
     width: 40vw;
-    margin: 1vh
+    margin: 1vh;
+    resize: vertical;
 }
 
 
