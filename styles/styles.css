@@ -197,7 +197,7 @@ div {
     flex-direction: row;
     margin: auto;
     align-items: center;
-    justify-content: center;    
+    /* justify-content: center;     */
 }
 
 .marktext{
@@ -212,8 +212,14 @@ div {
     justify-content: center;    
 }
 
-.heading{
+.heading1{
     color: #0f0f52;
+    margin: 0 0 0 150px;
+}
+
+.heading2{
+  color: #0f0f52;
+  margin-left: -375px;
 }
 
 .img img{
