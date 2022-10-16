@@ -202,6 +202,14 @@ div {
 
 .marktext{
     font-size: 1.1rem;
+    text-align: start;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.marktext-list{
+    margin: 10px;
+    font-weight: 200;
+    
 }
 
 .days{
