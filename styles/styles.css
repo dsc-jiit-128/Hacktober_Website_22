@@ -7,11 +7,11 @@ body {
 
 .pic1 {
     position: relative;
-    left: 11rem;
+    left: 0;
     animation-name: pic1move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: forwards;
 }
 
 
@@ -109,25 +109,38 @@ div {
 
 @keyframes pic1move {
   0% {
-    transform: translateX(10%);
-  }
+    transform: translateX(0%);
+    
+}
 
-  50% {
-    transform: translateX(40%);
-  }
-
-  100% {
-    transform: translateX(40%);
-  }
-
-
-  50% {
-    transform: translateX(-70%);
-  }
-
-  0% {
-    transform: translateX(-10%);
-  }
+  25% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+50% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+75% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
 }
 
 
@@ -189,6 +202,14 @@ div {
 
 .marktext{
     font-size: 1.1rem;
+    text-align: start;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.marktext-list{
+    margin: 10px;
+    font-weight: 200;
+    
 }
 
 .days{
