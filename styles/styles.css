@@ -355,6 +355,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+.menu :hover {
+  color: red;
+}
+
 .menu li {
   float: left;
   color: white;
