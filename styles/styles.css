@@ -1,7 +1,16 @@
 body {
-  background-color: rgb(249, 249, 98);
+  /* background-color: rgb(249, 249, 98); */
   width: 100%;
   overflow-x: hidden;
+  background-image: url("https://source.unsplash.com/random?google,white,bright,tech" );
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,0.25);
+
+
 }
 
 
@@ -412,6 +421,7 @@ nav a:hover {
     left: 702px; */
   padding-left: 55rem;
   line-height: 0.5;
+
 }
 
 .uppertext2 {
