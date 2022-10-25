@@ -31,6 +31,7 @@ body {
   font-size: 16px;
 }
 
+
 .webdevhead {
   margin-left: 429px;
 }
@@ -307,29 +308,42 @@ div {
 .parts{
     display: flex;
     flex-direction: row;
-    width: 200%;
+    width: 100%;
+    background-color:rgb(58, 183, 42)
 }
 
 .parts input{
-    width: 20vw;
+    width: 200%;
     padding:5px;
     margin: 1vh;
-}
+    background-position: center;
+    /* float: left; */
+    width: calc(100% - 200px);
+  }
 
 .email{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   padding: 20px;
-  width: 200%;
+  width: 100%;
+  
   animation: shake .3s;
+  background-color:hotpink;
+  background-position: center; */
+  /* float: left; */
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:rgb(58, 183, 42)
+  
 
 }
-@keyframes shake{
+/* @keyframes shake{
    25%{transform: translatex(4px) }
    50%{transform: translatex(-4px) }
    75%{transform: translatex(4px) }
 
-}
+} */
 
 .parts textarea{
     padding:5px;
@@ -565,7 +579,6 @@ form {
   text-decoration: line-through;
   color: darkblue;
 }
-
 /* //for navbar */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
 * {
@@ -668,13 +681,15 @@ nav a:hover {
     background: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/02/Usign-Gradients-Featured-Image.jpg);
     background-size: cover;
   } */
-form {
+.form {
   /* Center the form on the page */
   margin: 0 auto;
   width: 400px;
   /* Form outline */
   padding: 1em;
   border-radius: 1em;
+  /* background-color: #0f0f52; */
+
 }
 .card {
   background: rgba(255, 255, 255, 0.25);
