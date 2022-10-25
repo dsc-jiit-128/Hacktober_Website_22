@@ -311,9 +311,24 @@ div {
 }
 
 .parts input{
-    width: 40vw;
+    width: 20vw;
     padding:5px;
     margin: 1vh;
+}
+
+.email{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 200%;
+  animation: shake .3s;
+
+}
+@keyframes shake{
+   25%{transform: translatex(4px) }
+   50%{transform: translatex(-4px) }
+   75%{transform: translatex(4px) }
+
 }
 
 .parts textarea{
