@@ -388,6 +388,7 @@ a a:hover {
 }
 
 nav {
+  float: right;
     margin: auto;
     width: 100%;
     padding: 8px 0px;
@@ -400,7 +401,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #7575a3
+    color:blue
 }
 
 .logo {
@@ -423,13 +424,15 @@ nav a:hover {
     display: flex;
     align-items: center;
     list-style: none;
+    justify-content: right;
     width: 100%;
-    height: 100px;
+    height: 75px;
     position: absolute;
-    background-color: #000;
+    background:#5446469c;
     margin-top: 0px;
     margin-left: 0px;
     text-decoration: none;
+    float: right;
 }
 
 .menu :hover {
@@ -437,12 +440,12 @@ nav a:hover {
 }
 
 .menu li {
-  float: left;
+  float: right;
   color: white;
   text-decoration: none;
   font-size: 17px;
   width: 25%;
-  display: block;
+  display: flex;
   text-align: center;
 }
 
@@ -604,7 +607,7 @@ a a:hover {
   margin-right: 15px;
 }
 nav {
-  background-color: #222222;
+  background-color: #413d3d;
   padding: 8px 20px;
   display: flex;
   align-items: center;
@@ -613,7 +616,7 @@ nav a {
   color: #ffffff;
 }
 nav a:hover {
-  color: #7575a3;
+  color: yellow;
 }
 .logo {
   flex: 1;
@@ -628,9 +631,11 @@ nav a:hover {
 }
 .menu {
   display: flex;
+  float: inline-end;
   align-items: center;
   list-style: none;
 }
+
 .d-flex {
   display: flex;
   align-items: center;
