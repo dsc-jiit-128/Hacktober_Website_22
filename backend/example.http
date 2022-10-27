@@ -1,0 +1,8 @@
+POST http://localhost:3000/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "email": "sample@gmail.com",
+    "mobileNumber": 829383322
+}
